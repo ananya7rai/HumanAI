@@ -1,73 +1,73 @@
 # Automating Text Recognition and Transliteration of Historical Documents with Convolutional-Recurrent Architectures
 
-## Project Overview
-Transliterating text from historical documents is a complex challenge that modern OCR tools, such as Adobe Acrobat, struggle to address. While these tools work well on contemporary printed material, they fail to extract text from older printed sources and handwritten manuscripts. This project aims to develop a self-supervised AI model capable of recognizing text in 17th-century Spanish printed documents using convolutional-recurrent architectures.
+## Project Summary
+Extracting text from centuries-old manuscripts and early printed works presents challenges that conventional OCR tools like Adobe Acrobat cannot handle. These tools excel at recognizing modern print but struggle with historical fonts and handwritten documents. This project focuses on developing a self-supervised AI model tailored for recognizing text in 17th-century Spanish printed sources using convolutional-recurrent architectures.
 
 ---
 
-## Task Details: RenAIssance Project Evaluation for GSoC 2025 Applicants
+## Task: RenAIssance Project Evaluation for GSoC 2025 Candidates
 
-### Task Description
-As part of the evaluation, I have designed a model based on convolutional-recurrent architectures for Optical Character Recognition (OCR). Over the past two weeks, I have built this model from scratch and successfully implemented it on the provided dataset.
+### Objective
+As part of the evaluation, I have designed an Optical Character Recognition (OCR) model built upon convolutional-recurrent architectures. I have developed this model from scratch and successfully applied it to the given dataset.
 
 ### Solution Notebook
-The solution is a standalone Jupyter Notebook, ensuring easy execution in Google Colab or a local Jupyter environment.
+The project is encapsulated in a Jupyter Notebook as .ipynb, making it easy to execute in Google Colab or a local Jupyter environment.
 
 ---
 
-## Approach & Methodology
-To tackle this challenge, I followed a structured approach:
+## Methodology & Implementation
+To achieve accurate text recognition, I followed a structured and methodical approach:
 
-### 1. Research & Understanding
-I started by exploring various research papers and articles on Optical Character Recognition models to gain a comprehensive understanding of their underlying principles.
+### 1. In-Depth Research
+I began by reviewing existing research on Optical Character Recognition (OCR) models, studying various methods and architectures to understand their effectiveness.
 
-### 2. Data Preprocessing
-Proper data preprocessing was essential to ensure that the input format adhered to the required specifications. This included cleaning and structuring the dataset for optimal model performance.
+### 2. Preprocessing the Data
+Ensuring the dataset was properly formatted was crucial for effective training. This involved cleaning, resizing, and structuring the input data.
 
-### 3. Image Generation
-Using Python, I developed a function to generate images from the provided PDF files, ensuring accurate text representation.
+### 3. Image Conversion
+A custom Python function was developed to convert provided PDFs into images, preserving textual integrity for accurate recognition.
 
-### 4. Page Splitting
-To enhance the model’s ability to recognize text, I split double-sided pages into single-sided ones, improving training efficiency.
+### 4. Splitting Multi-Page Documents
+For better training efficiency, I separated double-page scans into individual pages, allowing the model to focus on isolated text instances.
 
-### 5. Word-to-Image Mapping
-A crucial step in training was mapping each word from the document to its corresponding image, creating a structured training dataset.
+### 5. Mapping Words to Images
+To create a well-structured training set, I implemented a mapping mechanism that associates each word with its corresponding image section.
 
-### 6. Bounding Box Detection
-Leveraging the CRAFT model, I implemented a bounding box detector to accurately locate and extract words from images.
+### 6. Detecting Text Boundaries
+I employed the CRAFT model to detect bounding boxes around text regions, accurately segmenting words and lines for OCR processing.
 
-### 7. Data Sorting
-To prevent mismatches during training, I implemented a sorting algorithm that arranged images vertically, grouped similar values, and then sorted them horizontally.
+### 7. Data Organization
+To avoid misalignment in training, I devised a sorting algorithm that arranges text regions first vertically, then horizontally, ensuring proper sequencing.
 
-### 8. Model Training
-The CNN-RNN model was trained using the preprocessed dataset, employing the CTC (Connectionist Temporal Classification) loss function to optimize performance.
+### 8. Training the Model
+Using a CNN-RNN architecture, I trained the OCR model with the Connectionist Temporal Classification (CTC) loss function to improve text recognition accuracy.
 
 ---
 
-## Model Performance & Evaluation
+## Performance & Evaluation
 ### Training Dataset
-A structured dataset was generated specifically for training the model.
+A curated dataset was used to optimize model learning and generalization.
 
-### Predictions
-The trained model successfully predicted text from the dataset.
+### Text Predictions
+The model successfully extracted and recognized text from historical sources.
 
-### CTC Loss
-The training process was monitored using the CTC loss metric, ensuring effective optimization for character recognition.
-
----
-
-## Future Improvements
-
-### 1. Implementing Self-Supervised Learning & Transformer Models
-To further enhance text recognition accuracy, incorporating self-supervised learning techniques and transformer architectures can provide robust representations of input data.
-
-### 2. Expanding the Training Dataset
-Enriching the dataset with more historical documents and diverse writing styles will help the model generalize better and improve accuracy across different document formats.
-
-### 3. Model Fine-Tuning & Optimization
-Continuous refinement of the model architecture through hyperparameter tuning and architectural adjustments will further enhance OCR accuracy and efficiency. Regular evaluations on various historical documents will provide insights for additional improvements.
+### CTC Loss Analysis
+Training was monitored using CTC loss metrics to ensure optimal character recognition efficiency.
 
 ---
 
-This project aims to bridge the gap in OCR technology by developing an AI-powered solution for historical document transliteration, ensuring better accessibility to centuries-old printed works.
+## Future Enhancements
+
+### 1. Integrating Self-Supervised Learning & Transformers
+Exploring self-supervised learning techniques and transformer-based architectures will enhance the model’s ability to recognize complex historical scripts.
+
+### 2. Expanding the Dataset
+Incorporating a more diverse set of historical documents will improve the model’s adaptability and accuracy across various fonts and writing styles.
+
+### 3. Continuous Model Optimization
+Further fine-tuning through hyperparameter optimization and architectural refinements will enhance accuracy and efficiency, ensuring robust OCR performance on historical texts.
+
+---
+
+This project strives to bridge the gap in existing OCR technology by developing an AI-driven solution tailored for historical document transliteration, facilitating better access to ancient texts and preserving cultural heritage.
 
