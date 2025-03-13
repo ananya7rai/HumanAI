@@ -1,21 +1,19 @@
-# Automating Text Recognition and Transliteration of Historical Documents with Convolutional-Recurrent Architectures
+# HumanAI
 
-## Project Summary
-Extracting text from centuries-old manuscripts and early printed works presents challenges that conventional OCR tools like Adobe Acrobat cannot handle. These tools excel at recognizing modern print but struggle with historical fonts and handwritten documents. This project focuses on developing a self-supervised AI model tailored for recognizing text in 17th-century Spanish printed sources using convolutional-recurrent architectures.
+## Project
+Automating Text Recognition and Transliteration of Historical Documents with Convolutional-Recurrent Architectures
 
----
-
-## Task: RenAIssance Project Evaluation for GSoC 2025 Candidates
-
-### Objective
-As part of the evaluation, I have designed an Optical Character Recognition (OCR) model built upon convolutional-recurrent architectures. I have developed this model from scratch and successfully applied it to the given dataset.
-
-### Solution Notebook
-The project is encapsulated in a Jupyter Notebook as .ipynb, making it easy to execute in Google Colab or a local Jupyter environment.
+## Project Description
+Transliteration of text from centuries-old works represents a research area that is underserved by current tools, such as Adobe Acrobat’s OCR. While these resources can perform text recognition from clearly printed modern sources, they are incapable of extracting textual data from early forms of print, much less manuscripts. This project will focus on the application of self-supervised AI models to recognize text in Spanish printed sources from the seventeenth century.
 
 ---
 
-## Methodology & Implementation
+## Task: RenAIssance Project Tests for Prospective GSoC 2025 Applicants
+I have designed an Optical Character Recognition (OCR) model built upon convolutional-recurrent architectures. I have developed this model from scratch and successfully applied it to the given dataset. The project is encapsulated in a Jupyter Notebook as .ipynb, making it easy to execute in Google Colab or a local Jupyter environment.
+
+---
+
+## My approach
 To achieve accurate text recognition, I followed a structured and methodical approach:
 
 ### 1. In-Depth Research
